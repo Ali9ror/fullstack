@@ -1,12 +1,28 @@
-# Getting Started with Create React App
+# Run Backend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Необходимо создать и активировать виртуальное окружение:
 
-## Available Scripts
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
-In the project directory, you can run:
+Запуск сервера
 
-### `npm start`
+```bash
+cd backend
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+
+## Run Frontend
+
+```bash
+cd frontend
+npm install
+npm install jwt-decode
+npm install react-icons
+npm start
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
